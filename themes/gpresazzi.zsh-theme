@@ -1,7 +1,7 @@
 #IMPORTANT: enable plugin shrink_path
 setopt prompt_subst
 
-local ret_status="%(?:%{$fg_bold[green]%}▶ :%{$fg_bold[red]%}➜ )"
+local ret_status="%(?:%{$fg_bold[green]%}❩%{$fg_bold[white]%}❩%{$fg_bold[red]%}❩ :%{$fg_bold[red]%}❩❩❩ )"
 PROMPT='${ret_status}%{$fg_bold[cyan]%}$(shrink_path -f)%{$reset_color%} $(git_prompt_info)'
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%} git:[%{$fg[red]%}"
